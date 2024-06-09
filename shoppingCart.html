@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 id="heading">Shopping Cart</h1>
+    <hr>
+    <div class="input-division">
+        <form id="input-form">
+            <label style="padding: 8px;font-family: sans-serif; font-weight: 500;font-size: 18px;">Item</label>
+            <select style="padding: 8px;font-family: sans-serif; font-weight: 600;font-size: 14px;" id="select-item">
+                <option value="apple">Apple - ₹150/kg</option>
+                <option value="banana">Banana - ₹50/kg</option>
+                <option value="rice">Rice - ₹60/kg</option>
+                <option value="wheat flour">Wheat Flour - ₹40/kg</option>
+                <option value="milk">Milk - ₹55/litre</option>
+                <option value="eggs">Eggs - ₹60/dozen</option>
+                <option value="chicken">Chicken - ₹200/kg</option>
+                <option value="paneer">Paneer - ₹350/kg</option>
+                <option value="sugar">Sugar - ₹45/kg</option>
+                <option value="salt">Salt - ₹20/kg</option>
+                <option value="butter">Butter - ₹450/kg</option>
+                <option value="oil">Oil - ₹180/litre</option>
+                <option value="tea">Tea - ₹250/kg</option>
+                <option value="coffee">Coffee - ₹500/kg</option>
+                <option value="tomato">Tomato - ₹30/kg</option>
+                <option value="potato">Potato - ₹25/kg</option>
+                <option value="onion">Onion - ₹30/kg</option>
+                <option value="garlic">Garlic - ₹150/kg</option>
+                <option value="ginger">Ginger - ₹120/kg</option>
+                <option value="spinach">Spinach - ₹40/bundle</option>
+            </select>
+            
+            <label style="padding: 8px;font-family: sans-serif; font-weight: 600;font-size: 14px;">Quantity</label>
+            <input style="padding: 8px;font-family: sans-serif; font-weight: 600;font-size: 14px;" id="select-quantity" type="number">
+            <button type="Submit">Add Item</button>
+
+        </form>
+    </div>
+    <hr>
+    <div>
+        <table id="table">
+            <thead>
+            <tr style="background-color: rgb(48, 194, 194);">
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+              <!-- <tr id="data"></tr> -->
+              <!-- <tr id="gt"></tr> -->
+               <!-- <tr><td><hr></td></tr> -->
+                <!-- <tr><td><hr></td></tr> -->
+               <tr>
+                <td colspan="5" style="margin-top: 10px; font-weight: 600; font-size: large; color: brown;">Grand Total = <span style="font-size:30px;" id="grandTotal"> 0 </span><span> Rupees Only</span></td>
+               </tr>
+        </table>
+        <!-- <h3  color: blue;"></h3> -->
+    </div>
+    <br><br><br>
+    <br>
+    <center> <button style="color: white; background-color: rgb(182, 144, 224);" onclick="toPrintInvoice()" id="print" style="text-align: center;">Print Invoice</button>
+    <h4>THANK YOU FOR VISITING : <span style="font-size: 25px;">🙂</span></h4></center>
+    <script src="script.js"></script>
+</body>
+</html>
